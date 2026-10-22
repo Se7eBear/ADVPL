@@ -10,5 +10,5 @@ Local nTotal
 
 nTotal := (nAnos * 365) + (nMeses * 30) + nDias
 
-MsgInfo("Voce tem: " + cValToChar(nTotal) + "de dias de vida", "total de dias")
+MsgInfo("Voce tem: " + cValToChar(nTotal) + " de dias de vida", "total de dias")
 Return Nil
