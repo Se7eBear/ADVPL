@@ -1,13 +1,13 @@
 User Function ex02()
 
-Local cJbase := FWInputBox("Base de um retangulo", "" ,"0")
-Local cJaltura := FWInputBox("Altura de um retangulo", "" ,"0")
-Local nBase := Val(cJbase)
-Local nAltura := Val(cJaltura)
+Local cBase := FWInputBox("Base de um retangulo", "")
+Local cAltura := FWInputBox("Altura de um retangulo", "")
+Local nBase := Val(cBase)
+Local nAltura := Val(cAltura)
 Local nArea
 
 nArea := nBase * nAltura
 
-MsgInfo("Area do Retangulo: " + cValToChar(nArea), "Janela")
+MsgInfo("Area do Retangulo: " + cValToChar(nArea), "Area")
 
 Return Nil
