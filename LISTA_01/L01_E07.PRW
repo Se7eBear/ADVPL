@@ -8,9 +8,9 @@ Local nTotal
 
 If nComprar >= 12
     nTotal := nComprar * nPreco2
-    MsgInfo("Vc recebeu um desconto, vai pagar: " + cValToChar(nTotal) + " Reais")
+    MsgInfo("Vc recebeu um desconto, vai pagar: " + cValToChar(nTotal) + " Reais", "Maças a pagar")
 Else
     nTotal := nComprar * nPreco1
-    MsgInfo("Valor a cobrar: " + cValToChar(nTotal) + " Reais.")
+    MsgInfo("Valor a cobrar: " + cValToChar(nTotal) + " Reais.", "Maças a pagar")
 endif
 Return Nil
