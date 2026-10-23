@@ -8,6 +8,7 @@ Local nTotal
 
 If nComprar < 0
     Return
+EndIf
 If nComprar >= 12
     nTotal := nComprar * nPreco2
     MsgInfo("Vc recebeu um desconto, vai pagar: " + cValToChar(nTotal) + " Reais", "Maças a pagar")
