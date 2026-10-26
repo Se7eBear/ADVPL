@@ -1,4 +1,4 @@
-user Function ex01()
+User Function ex01()
 
 Local cEntrada := FWInputBox("Coloque um valor maior que Zero", "")
 Local nNbr := Val(cEntrada)

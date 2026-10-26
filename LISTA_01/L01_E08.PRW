@@ -1,7 +1,7 @@
 User Function ex08()
 
-Local cHoras := FWInput("Quantas horas trabalhou esse mes: ", "")
-Local cValorh := FWInput("Quanto vc recebe por hora: ", "")
+Local cHoras := FWInputBox("Quantas horas trabalhou esse mes: ", "")
+Local cValorh := FWInputBox("Quanto vc recebe por hora: ", "")
 Local nHoras := Val(cHoras)
 Local nValorh := Val(cValorh)
 Local nTotal
