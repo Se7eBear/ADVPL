@@ -19,9 +19,9 @@ If nC < nB + nA
 EndIf
 
 If nTrue == 3
-    MsgInfo("Triangulo formado!")
+    MsgInfo("Triangulo formado!", "")
 Else
-    MsgInfo("Nao formou triangulo.")
+    MsgInfo("Nao formou triangulo.", "")
 EndIf
 
 Return Nil
