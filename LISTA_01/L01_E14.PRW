@@ -9,9 +9,6 @@ Local nTotal := 0
 While nValue2 == 0
    cValue2 := FWInputBox("Escreva o segundo valor", "")
    nValue2 := val(cValue2)
-    If nValue2 == 0
-        MsgAlert("O divisor nao pode ser zero. Tente novamente.", "Atencao")
-    EndIf
 EndDo
 
 nTotal := nValue1 / nValue2
