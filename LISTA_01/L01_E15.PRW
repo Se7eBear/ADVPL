@@ -1,4 +1,4 @@
-User Function ex14()
+User Function ex15()
 
 Local cValue1 := FWInputBox("Escreva o primeiro valor", "")
 Local nValue1 := Val(cValue1)
