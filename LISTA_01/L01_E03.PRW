@@ -6,7 +6,7 @@ Local cDias := FWInputBox("E quantos Dias voce tem: ", "")
 Local nAnos := Val(cAnos)
 Local nMeses := Val(cMeses)
 Local nDias := Val(cDias)
-Local nTotal
+Local nTotal := 0
 
 nTotal := (nAnos * 365) + (nMeses * 30) + nDias
 
