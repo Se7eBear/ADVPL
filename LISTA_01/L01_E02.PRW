@@ -4,7 +4,7 @@ Local cBase := FWInputBox("Base de um retangulo", "")
 Local cAltura := FWInputBox("Altura de um retangulo", "")
 Local nBase := Val(cBase)
 Local nAltura := Val(cAltura)
-Local nArea
+Local nArea := 0
 
 nArea := nBase * nAltura
 

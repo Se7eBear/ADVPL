@@ -5,8 +5,8 @@ Local cVal3 := FWInputBox("Terceiro Valor", "")
 Local nVal1 := Val(cVal1)
 Local nVal2 := Val(cVal2)
 Local nVal3 := Val(cVal3)
-Local nTemp
-Local cMsg
+Local nTemp := 0
+Local cMsg := ""
 
 If nVal1 == nVal2 .Or. nVal1 == nVal3 .OR. nVal3 == nVal2
     MsgInfo("Nao pode ter numero repetido.", "")

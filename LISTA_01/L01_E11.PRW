@@ -6,8 +6,9 @@ Local nA := Val(cA)
 Local nB := Val(cB)
 Local nC := Val(cC)
 Local nTrue := 0
+
 If nA < nB + nC
-    nTrue := 1
+    nTrue++
 EndIf
 
 If nB < nA + nC
