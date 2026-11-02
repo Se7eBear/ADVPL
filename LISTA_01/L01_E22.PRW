@@ -1,15 +1,16 @@
 #include "totvs.ch"
 User Function ex22()
-Local nValue := Val(FWInputBox("Coloque um inteiro", ""))
+Local nValue := 0
 Local nNum := 0
-Local nI := 0
 Local cMsg := ""
 
-If nValue >= 1 .And. nValue <= 10
-    For nNum := 1 To 10
-        cMsg += cValToChar(nValue * (nI + 1)) + " " + CRLF
-        nI++
-    Next nNum
-    MsgInfo(cMsg)
-EndIf
+While nValue < 1 .Or. nValue > 10 .Or. nValue != Int(nValue)
+    nValue := Val(FWInputBox("Coloque um inteiro de 1 a 10", ""))
+EndDo
+
+For nNum := 1 To 10
+    cMsg += cValToChar(nValue) + " x " + cValToChar(nNum) + " = " + cValToChar(nValue * nNum) + CRLF
+Next nNum
+MsgInfo(cMsg, "Tabuada do " + cValToChar(nValue))
+
 Return Nil
