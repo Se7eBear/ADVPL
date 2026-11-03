@@ -11,6 +11,6 @@ If nGolst1 > nGolst2
 ElseIf nGolst2 > nGolst1
     MsgInfo("O time " + cTime2 + " Ganhou!", "Time vencedor é...")
 Else
-    MsgInfo("ENPATE!", "Time vencedor é...")
+    MsgInfo("EMPATE!", "Time vencedor é...")
 EndIf
 Return Nil
