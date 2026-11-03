@@ -7,20 +7,23 @@ Local nQuantidade := Val(cQuantidade)
 Local nValue := Val(cValue)
 Local nSubtotal := nQuantidade * nValue
 Local nPercen := 0
+Local nDesconto := 0
 Local nTotal := 0
 
 If nQuantidade <= 5
     nPercen := 2
-ElseIf nQuantidade > 10
-    nPercen := 5
+ElseIf nQuantidade > 5 .and. nQuantidade <= 10
+    nPercen := 3
 Else
-    nPercen := 10
+    nPercen := 5
 EndIf
 
+nDesconto := nSubtotal * nPercen / 100
 nTotal := nSubTotal - (nSubtotal * nPercen / 100)
 
-MsgInfo("Total a pagar no item " + AllTrim(cName) + ;
-": " + cValToChar(nTotal) + ;
-" (desconto de: " + cValToChar(nPercen) + "%)", "Valor a pagar.")
+MsgInfo("Produto: " + AllTrim(cName) + CRLF + ;
+"Total: " + cValToChar(nSubtotal) + CRLF + ;
+"Desconto (" + cValToChar(nPercen) + "%): " + cValToChar(nDesconto) + CRLF + ;
+"Total a pagar: " + cValToChar(nTotal), "Valor a pagar.")
 
 Return Nil

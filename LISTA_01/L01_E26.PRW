@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex26()
 Local nNum := 0
 Local nSoma := 0

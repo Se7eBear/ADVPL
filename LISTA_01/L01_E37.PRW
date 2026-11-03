@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex37()
 Local nValor := 0
 Local nPercen := 0

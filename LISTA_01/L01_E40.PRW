@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex40()
 Local nValorh := Val(FWInputBox("Valor da sua hora", ""))
 Local nHoras := Val(FWInputBox("Quantidade de horas trabalhadas no mes", ""))

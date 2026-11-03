@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex18()
 Local nNum := 1
 Local cMsg := ""

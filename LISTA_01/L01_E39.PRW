@@ -1,14 +1,14 @@
 #include "totvs.ch"
+
 User Function ex39()
 Local aNomes := {}
 Local nSorteado := 0
 
-// TROQUE pelos nomes reais dos participantes da trilha Start II
-aAdd(aNomes, "Participante 1")
-aAdd(aNomes, "Participante 2")
-aAdd(aNomes, "Participante 3")
-aAdd(aNomes, "Participante 4")
-aAdd(aNomes, "Participante 5")
+aAdd(aNomes, "Bruno Sete")
+aAdd(aNomes, "Rodrigo")
+aAdd(aNomes, "Wagner")
+aAdd(aNomes, "Eduardo")
+aAdd(aNomes, "Leonardo")
 
 nSorteado := Randomize(1, Len(aNomes) + 1)
 

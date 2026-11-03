@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex32()
 Local aArray1 := {}
 Local aArray2 := {}

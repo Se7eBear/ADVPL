@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex35()
 Local nIdade := -1
 Local nSoma := 0

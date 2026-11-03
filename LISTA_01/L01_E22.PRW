@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex22()
 Local nValue := 0
 Local nNum := 0

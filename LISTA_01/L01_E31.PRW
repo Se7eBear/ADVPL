@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex31()
 Local aNumeros := {}
 Local nNum := 0

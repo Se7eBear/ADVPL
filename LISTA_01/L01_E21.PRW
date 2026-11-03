@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex21()
 Local nValue := Val(FWInputBox("Coloque um inteiro", ""))
 Local nNum := 0

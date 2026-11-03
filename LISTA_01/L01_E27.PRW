@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex27()
 Local nPrimeiro := 0
 Local nNum := 0

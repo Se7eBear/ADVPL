@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex38()
 Local nNum := 0
 Local nIdade := 0

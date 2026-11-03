@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex36()
 Local nValue := Val(FWInputBox("Coloque um inteiro para calcular o fatorial", ""))
 Local nNum := 0
