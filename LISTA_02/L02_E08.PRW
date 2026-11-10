@@ -1,13 +1,13 @@
 User Function ex08_L02()
 Local cUsuario := FWInputBox("Nome de usuario", "")
-Local cSenha := FWInputBox("Senha", "")
+Local cSenhaUser := FWInputBox("Senha", "")
 Local cUsuarioOk := "admin"
 Local cSenhaOk := "advpl123"
 Local lUsuarioOk := (cUsuario == cUsuarioOk)
 Local lAcesso := .F.
 
 If lUsuarioOk
-    lAcesso := (cSenha == cSenhaOk)
+    lAcesso := (cSenhaUser == cSenhaOk)
 EndIf
 
 If lAcesso
