@@ -1,14 +1,14 @@
-User Function ex09()
+#include "totvs.ch"
 
-Local cNbr := FWInputBox("Escreva um numero para verificar", "")
-Local nNbr := Val(cNbr)
+User Function ex09_L01()
+    Local cNbr := FWInputBox("Escreva um numero para verificar", "")
+    Local nNbr := Val(cNbr)
 
-If nNbr > 0
-    MsgInfo("Numero Positivo: " + cValToChar(nNbr), "Seu numero e Positivo")
-elseif nNbr < 0
-    MsgInfo("Numero Negativo: " + cValToChar(nNbr), "Seu numero e Negativo")
-else
-    MsgInfo("Numero ZERO: " + cValToChar(nNbr), "Seu numero e zero")
-EndIf
-
+    If nNbr > 0
+        MsgInfo("Numero Positivo: " + cValToChar(nNbr), "Seu numero e Positivo")
+    elseif nNbr < 0
+        MsgInfo("Numero Negativo: " + cValToChar(nNbr), "Seu numero e Negativo")
+    else
+        MsgInfo("Numero ZERO: " + cValToChar(nNbr), "Seu numero e zero")
+    EndIf
 Return Nil

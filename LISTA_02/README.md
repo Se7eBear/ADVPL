@@ -1,6 +1,6 @@
 # Lista 02 — explicação dos fontes
 
-Este arquivo explica o objetivo e o fluxo principal de cada fonte da lista. Os programas seguem o estilo usado na Lista 01: recebem dados com `FWInputBox` e apresentam resultados com `MsgInfo` ou avisos com `MsgAlert`.
+Este arquivo explica o objetivo e o fluxo principal de cada fonte da lista. As funções seguem o padrão `exNN_L02()`. Os programas recebem dados com `FWInputBox` e apresentam resultados com `MsgInfo` ou avisos com `MsgAlert`.
 
 ## Exercícios 01 a 06
 

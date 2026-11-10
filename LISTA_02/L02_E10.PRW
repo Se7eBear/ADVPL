@@ -1,24 +1,25 @@
+#include "totvs.ch"
+
 User Function ex10_L02()
-Local nNum := 0
-Local nValor := 0
-Local nMenor := 0
-Local nMaior := 0
+    Local nNum := 0
+    Local nValor := 0
+    Local nMenor := 0
+    Local nMaior := 0
 
-For nNum := 1 To 5
-    nValor := Val(FWInputBox("Informe o valor inteiro " + cValToChar(nNum), ""))
-    If nNum == 1
-        nMenor := nValor
-        nMaior := nValor
-    Else
-        If nValor < nMenor
+    For nNum := 1 To 5
+        nValor := Val(FWInputBox("Informe o valor inteiro " + cValToChar(nNum), ""))
+        If nNum == 1
             nMenor := nValor
-        EndIf
-        If nValor > nMaior
             nMaior := nValor
+        Else
+            If nValor < nMenor
+                nMenor := nValor
+            EndIf
+            If nValor > nMaior
+                nMaior := nValor
+            EndIf
         EndIf
-    EndIf
-Next nNum
-
-MsgInfo("Menor valor: " + cValToChar(nMenor) + CRLF + ;
+    Next nNum
+    MsgInfo("Menor valor: " + cValToChar(nMenor) + CRLF + ;
     "Maior valor: " + cValToChar(nMaior), "Valores")
 Return Nil

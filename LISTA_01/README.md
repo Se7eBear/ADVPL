@@ -1,6 +1,6 @@
 # Lista 01 — explicação dos fontes
 
-Cada item abaixo explica o fluxo principal do arquivo `.PRW` correspondente. Os exercícios usam `FWInputBox` para receber dados e `MsgInfo`/`MsgAlert` para apresentar resultados ou avisos.
+Cada item abaixo explica o fluxo principal do arquivo `.PRW` correspondente. As funções seguem o padrão `exNN_L01()`. Os exercícios usam `FWInputBox` para receber dados e `MsgInfo`/`MsgAlert` para apresentar resultados ou avisos.
 
 ## Exercícios 01 a 10
 

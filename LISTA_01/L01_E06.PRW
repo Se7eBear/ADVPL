@@ -1,9 +1,10 @@
-User Function ex06()
+#include "totvs.ch"
 
-Local cFahren := FWInputBox("Coloque um valor em Fahrenheit: ", "")
-Local nFahren := Val(cFahren)
-Local nCelsius
+User Function ex06_L01()
+    Local cFahren := FWInputBox("Coloque um valor em Fahrenheit: ", "")
+    Local nFahren := Val(cFahren)
+    Local nCelsius
 
-nCelsius := (nFahren - 32) / 1.8
-MsgInfo("Valor foi convertido para Celsius: " + cValToChar(nCelsius), "Conversor")
+    nCelsius := (nFahren - 32) / 1.8
+    MsgInfo("Valor foi convertido para Celsius: " + cValToChar(nCelsius), "Conversor")
 Return Nil

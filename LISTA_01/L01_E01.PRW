@@ -1,10 +1,12 @@
-User Function ex01()
+#include "totvs.ch"
 
-Local cEntrada := FWInputBox("Coloque um valor maior que Zero", "")
-Local nNbr := Val(cEntrada)
-if nNbr <= 0
-    return
-endif
-nNbr--
-MsgInfo("Antecessor do numero: " + cValToChar(nNbr), "Calculo de antecessor")
-return nil
+User Function ex01_L01()
+    Local cEntrada := FWInputBox("Coloque um valor maior que Zero", "")
+    Local nNbr := Val(cEntrada)
+
+    if nNbr <= 0
+        Return
+    endif
+    nNbr--
+    MsgInfo("Antecessor do numero: " + cValToChar(nNbr), "Calculo de antecessor")
+Return Nil
