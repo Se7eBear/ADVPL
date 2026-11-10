@@ -1,4 +1,4 @@
-User Function ex17()
+User Function ex17_L02()
 Local nSorteado := Random(0, 100)
 Local nChute := Val(FWInputBox("Adivinhe o numero sorteado entre 0 e 100", ""))
 

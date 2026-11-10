@@ -1,4 +1,4 @@
-User Function ex11()
+User Function ex11_L02()
 Local nNum := 0
 Local cMsgFor := ""
 Local cMsgWhile := ""

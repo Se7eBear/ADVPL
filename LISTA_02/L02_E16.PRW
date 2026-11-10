@@ -1,4 +1,4 @@
-User Function ex16()
+User Function ex16_L02()
 Local cUsuario := FWInputBox("Escolha um username com mais de 5 caracteres", "")
 Local cSenha := FWInputBox("Escolha uma senha (minimo 6 caracteres, maiuscula, numero e simbolo)", "")
 Local cConfirma := FWInputBox("Digite a senha novamente", "")

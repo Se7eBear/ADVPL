@@ -1,4 +1,4 @@
-User Function ex08()
+User Function ex08_L02()
 Local cUsuario := FWInputBox("Nome de usuario", "")
 Local cSenha := FWInputBox("Senha", "")
 Local cUsuarioOk := "admin"

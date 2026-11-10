@@ -1,4 +1,4 @@
-User Function ex10()
+User Function ex10_L02()
 Local nNum := 0
 Local nValor := 0
 Local nMenor := 0

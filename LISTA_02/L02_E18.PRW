@@ -1,4 +1,4 @@
-User Function ex18()
+User Function ex18_L02()
 Local nSorteado := Random(0, 100)
 Local nChute := -1
 Local nTentativas := 0

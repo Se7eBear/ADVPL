@@ -1,4 +1,4 @@
-User Function ex02()
+User Function ex02_L02()
 Local nTempo := Val(FWInputBox("Tempo gasto na viagem (horas)", ""))
 Local nVeloc := Val(FWInputBox("Velocidade media (km/h)", ""))
 Local nDist := nTempo * nVeloc

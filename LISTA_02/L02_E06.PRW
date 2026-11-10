@@ -1,4 +1,4 @@
-User Function ex06()
+User Function ex06_L02()
 Local nNum := 0
 Local nValor := 0
 Local cMsg := ""

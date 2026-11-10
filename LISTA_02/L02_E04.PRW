@@ -1,4 +1,4 @@
-User Function ex04()
+User Function ex04_L02()
 Local nA := Val(FWInputBox("Informe o inteiro A", ""))
 Local nB := Val(FWInputBox("Informe o inteiro B", ""))
 Local nResultado := (nA - nB) ^ 2

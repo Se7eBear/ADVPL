@@ -1,4 +1,4 @@
-User Function ex07()
+User Function ex07_L02()
 Local nInicio := Val(FWInputBox("Hora de inicio (0 a 23)", ""))
 Local nFim := Val(FWInputBox("Hora de fim (0 a 23)", ""))
 Local nDuracao := 0

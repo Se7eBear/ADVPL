@@ -1,4 +1,4 @@
-User Function ex09()
+User Function ex09_L02()
 Local nMes := Val(FWInputBox("Informe um numero de 1 a 12", ""))
 Local aDias := {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
 

@@ -1,4 +1,4 @@
-User Function ex12()
+User Function ex12_L02()
 Local nNum := 0
 Local cMsg := ""
 

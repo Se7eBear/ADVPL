@@ -1,4 +1,4 @@
-User Function ex14()
+User Function ex14_L02()
 Local nQtd := Val(FWInputBox("Quantidade de numeros", ""))
 Local cTipo := Upper(FWInputBox("Escolha par ou impar", ""))
 Local nNum := 0

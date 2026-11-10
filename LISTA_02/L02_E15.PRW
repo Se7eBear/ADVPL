@@ -1,4 +1,4 @@
-User Function ex15()
+User Function ex15_L02()
 Local nQtd := Val(FWInputBox("Quantos numeros de Fibonacci deseja ver?", ""))
 Local nNum := 0
 Local nAnterior := 0

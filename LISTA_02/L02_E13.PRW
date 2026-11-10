@@ -1,4 +1,4 @@
-User Function ex13()
+User Function ex13_L02()
 Local nMultiplo := Val(FWInputBox("Informe o numero para buscar os multiplos", ""))
 Local nLimite := Val(FWInputBox("Informe o limite", ""))
 Local nNum := 0

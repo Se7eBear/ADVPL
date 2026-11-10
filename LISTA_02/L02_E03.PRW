@@ -1,4 +1,4 @@
-User Function ex03()
+User Function ex03_L02()
 Local nTempo := Val(FWInputBox("Tempo gasto na viagem (horas)", ""))
 Local nVeloc := Val(FWInputBox("Velocidade media (km/h)", ""))
 Local nConsumo := Val(FWInputBox("Consumo do veiculo (km por litro)", ""))

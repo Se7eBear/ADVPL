@@ -1,4 +1,4 @@
-User Function ex01()
+User Function ex01_L02()
 Local nNum1 := Val(FWInputBox("Primeiro numero positivo", ""))
 Local nNum2 := Val(FWInputBox("Segundo numero positivo", ""))
 Local cMsg := ""
