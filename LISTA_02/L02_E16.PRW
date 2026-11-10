@@ -1,6 +1,6 @@
 User Function ex16_L02()
 Local cUsuario := FWInputBox("Escolha um username com mais de 5 caracteres", "")
-Local cSenha := FWInputBox("Escolha uma senha (minimo 6 caracteres, maiuscula, numero e simbolo)", "")
+Local cSenhaUsuario := FWInputBox("Escolha uma senha", "")
 Local cConfirma := FWInputBox("Digite a senha novamente", "")
 Local nPos := 0
 Local lMaiuscula := .F.
@@ -12,17 +12,17 @@ If Len(cUsuario) <= 5
     MsgAlert("O username deve possuir mais de 5 caracteres.", "Cadastro")
     Return Nil
 EndIf
-If cSenha != cConfirma
+If cSenhaUsuario != cConfirma
     MsgAlert("A senha e a confirmacao devem ser iguais.", "Cadastro")
     Return Nil
 EndIf
-If Len(cSenha) < 6
+If Len(cSenhaUsuario) < 6
     MsgAlert("A senha deve possuir ao menos 6 caracteres.", "Cadastro")
     Return Nil
 EndIf
 
-For nPos := 1 To Len(cSenha)
-    cCaractere := SubStr(cSenha, nPos, 1)
+For nPos := 1 To Len(cSenhaUsuario)
+    cCaractere := SubStr(cSenhaUsuario, nPos, 1)
     If cCaractere >= "A" .And. cCaractere <= "Z"
         lMaiuscula := .T.
     ElseIf cCaractere >= "0" .And. cCaractere <= "9"
