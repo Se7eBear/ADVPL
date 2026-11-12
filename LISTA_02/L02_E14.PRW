@@ -3,6 +3,7 @@
 User Function ex14_L02()
     Local nQtd := Val(FWInputBox("Quantidade de numeros", ""))
     Local cTipo := Upper(FWInputBox("Escolha par ou impar", ""))
+    Local cPlural := ""
     Local nNum := 0
     Local nAtual := 0
     Local nSoma := 0
@@ -13,13 +14,15 @@ User Function ex14_L02()
     EndIf
     If cTipo == "PAR"
         nAtual := 2
+        cPlural := "pares"
     Else
         nAtual := 1
+        cPlural := "impares"
     EndIf
     For nNum := 1 To nQtd
         nSoma += nAtual
         nAtual += 2
     Next nNum
     MsgInfo("Soma dos " + cValToChar(nQtd) + " primeiros numeros " + ;
-    Lower(cTipo) + "s: " + cValToChar(nSoma), "Somatoria")
+    cPlural + ": " + cValToChar(nSoma), "Somatoria")
 Return Nil
