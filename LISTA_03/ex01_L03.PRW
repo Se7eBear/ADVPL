@@ -1,47 +1,45 @@
-// #include <totvs.ch>
+#include "totvs.ch"
+#include "tbiconn.ch"
 
-// User Function ex01_L03()
+User Function ex01_L03()
+    Local cAlias   := GetNextAlias()
+    Local cMsg     := ""
+    Local nCont    := 0
+    Local lAbreAmb := (Select("SX2") == 0)
 
-//Bibliotecas
-#Include "TOTVS.ch"
-#Include "TopConn.ch"
- 
-/*/{Protheus.doc} User Function zExe478
-Executa uma query e atribui um alias para ela
-@type Function
-@author Atilio
-@since 03/04/2023
-@see https://tdn.totvs.com/display/tec/Comando+TCQUERY
-@obs 
- 
-/*/
- 
-User Function zExe478()
-    Local aArea      := FWGetArea()
-    Local cQrySBM    := ""
- 
-    //Monta uma query para buscar um grupo de produto com o código 0002
-    cQrySBM += " SELECT  " + CRLF
-    cQrySBM += "     BM_GRUPO, BM_DESC " + CRLF
-    cQrySBM += " FROM  " + CRLF
-    cQrySBM += "     " + RetSQLName("SBM") + " SBM  " + CRLF
-    cQrySBM += " WHERE  " + CRLF
-    cQrySBM += "     BM_FILIAL = '" + FWxFilial("SBM") + "' " + CRLF
-    cQrySBM += "     AND BM_GRUPO = '0002' " + CRLF
-    cQrySBM += "     AND SBM.D_E_L_E_T_ = ' ' " + CRLF
- 
-    //Abre o alias em memória
-    TCQuery cQrySBM New Alias "QRY_SBM"
- 
-    //Exibe alguma mensagem, caso haja dados
-    If !RY_SBM->(EoF())
-        FWAlertInfo("Descrição do grupo: " + QRY_SBM->BM_DESC, "Teste TCQuery")
+    If lAbreAmb
+        PREPARE ENVIRONMENT EMPRESA "99" FILIAL "01" MODULO "COM"
     EndIf
- 
-    //Fecha o alias
-    QRY_SBM->(DbCloseArea())
- 
-    FWRestArea(aArea)
-Return
 
-// Return Nil
+    BeginSql Alias cAlias
+        SELECT DISTINCT C7_NUM
+          FROM %table:SC7% SC7
+         INNER JOIN %table:SA2% SA2
+            ON A2_FILIAL = %xFilial:SA2%
+           AND A2_COD    = C7_FORNECE
+           AND A2_LOJA   = C7_LOJA
+           AND SA2.%NotDel%
+         WHERE C7_FILIAL = %xFilial:SC7%
+           AND SC7.%NotDel%
+           AND (UPPER(A2_NOME)   LIKE '%%SUPER CABOS%%'
+             OR UPPER(A2_NREDUZ) LIKE '%%SUPER CABOS%%')
+         ORDER BY C7_NUM
+    EndSql
+
+    While !(cAlias)->(Eof())
+        nCont++
+        cMsg += "Pedido " + cValToChar(nCont) + ": " + AllTrim((cAlias)->C7_NUM) + CRLF
+        (cAlias)->(DbSkip())
+    EndDo
+    (cAlias)->(DbCloseArea())
+
+    If Empty(cMsg)
+        Alert("Nenhum pedido encontrado para o fornecedor Super Cabos.")
+    Else
+        MsgInfo(cMsg, "Pedidos - Super Cabos")
+    EndIf
+
+    If lAbreAmb
+        RESET ENVIRONMENT
+    EndIf
+Return Nil
