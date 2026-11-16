@@ -5,11 +5,6 @@ User Function ex01_L03()
     Local cAlias   := GetNextAlias()
     Local cMsg     := ""
     Local nCont    := 0
-    Local lAbreAmb := (Select("SX2") == 0)
-
-    If lAbreAmb
-        PREPARE ENVIRONMENT EMPRESA "99" FILIAL "01" MODULO "COM"
-    EndIf
 
     BeginSql Alias cAlias
         SELECT DISTINCT C7_NUM
@@ -39,7 +34,4 @@ User Function ex01_L03()
         MsgInfo(cMsg, "Pedidos - Super Cabos")
     EndIf
 
-    If lAbreAmb
-        RESET ENVIRONMENT
-    EndIf
 Return Nil
