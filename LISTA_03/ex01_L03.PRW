@@ -2,6 +2,7 @@
 #include "tbiconn.ch"
 
 User Function ex01_L03()
+    MsgInfo("A rotina executou", "Teste")
     Local cAlias   := GetNextAlias()
     Local cMsg     := ""
     Local nCont    := 0
