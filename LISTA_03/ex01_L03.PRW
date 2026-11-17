@@ -9,6 +9,10 @@ User Function ex01_L03()
 
     PREPARE ENVIRONMENT EMPRESA "99" FILIAL "01" MODULO "COM"
 
+    If Select("SX2") == 0
+        RpcSetEnv("99", "01")
+    EndIf
+
     BeginSql Alias cAlias
         SELECT DISTINCT C7_NUM
           FROM %table:SC7% SC7
