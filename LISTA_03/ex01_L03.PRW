@@ -5,8 +5,10 @@ User Function ex01_L03()
     Local cAlias   := GetNextAlias()
     Local cMsg     := ""
     Local nCont    := 0
-    MsgInfo("Rodou")
-    // PREPARE ENVIRONMENT EMPRESA "99" FILIAL "01" MODULO "COM"
+
+    If Select("SX2") == 0
+        RpcSetEnv("99", "01")
+    endif
 
     BeginSql Alias cAlias
         SELECT DISTINCT C7_NUM
@@ -35,5 +37,4 @@ User Function ex01_L03()
     Else
         MsgInfo(cMsg, "Pedidos - Super Cabos")
     EndIf
-
 Return Nil
