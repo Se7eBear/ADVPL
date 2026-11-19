@@ -1,7 +1,7 @@
 #include "topconn.ch"
 #include "totvs.ch"
 user function ex04_L03()
-    LOCAL cQuery := ""
+
     LOCAL cAlias := GetNextAlias() 
     LOCAL cMsg := ""
 
@@ -21,16 +21,6 @@ user function ex04_L03()
             AND SB1.%NoteDel%
             ORDER BY B1_DESC
         EndSql
-
-    // cQuery := "SELECT * "
-    // cQuery += "FROM " + RetSqlName("SB1") + " SB1 "
-    // cQuery += "INNER JOIN " + RetSqlName("SBM") + " SBM "
-    // cQuery += "ON SBM.BM_GRUPO = SB1.B1_GRUPO AND "
-    // cQuery += "SBM.BM_GRUPO = '08' AND "
-    // cQuery += "SB1.D_E_L_E_T_ = ' ' AND "
-    // cQuery += "SBM.D_E_L_E_T_ = ' '"
-    
-    TCQuery cQuery NEW ALIAS (cAlias) 
     
     while !(cAlias)->(EOF())
         cMsg += CRLF + Alltrim((cAlias)->B1_DESC)
