@@ -1,4 +1,5 @@
 #include "totvs.ch"
+
 User Function ex18_L03()
     Local cNome := Space(50)
     Local cMsg := ""

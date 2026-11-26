@@ -24,6 +24,7 @@ User Function ex01_L03()
             OR UPPER(A2_NREDUZ) LIKE '%%SUPER CABOS%%')
         ORDER BY C7_NUM
     EndSql
+    
     While !(cAlias)->(Eof())
         nCont++
         cMsg += "Pedido " + cValToChar(nCont) + ": " + AllTrim((cAlias)->C7_NUM) + CRLF

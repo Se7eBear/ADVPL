@@ -1,5 +1,6 @@
 #include "topconn.ch"
 #include "totvs.ch"
+
 user function ex04_L03()
 
     LOCAL cAlias := GetNextAlias() 

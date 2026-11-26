@@ -1,7 +1,7 @@
 #include "totvs.ch"
 #include "tbiconn.ch"
 
-USER FUNCTION ex02_L03()
+User Function ex02_L03()
 
 Local cAlias := GetNextAlias()
 Local cMsg := ""

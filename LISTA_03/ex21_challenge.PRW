@@ -16,7 +16,7 @@ User Function desafio_L03()
         nTotal++
 
         If Empty(SB1->B1_ZZGRP)
-            RecLock("SB1", .F.)          // .F. = alterar o registro atual
+            RecLock("SB1", .F.)
                 SB1->B1_ZZGRP := U_ex20_L03(SB1->B1_TIPO)
             SB1->(MsUnlock())
             nAtualizados++
