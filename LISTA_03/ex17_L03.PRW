@@ -1,7 +1,7 @@
 #include "totvs.ch"
 
 User Function ex17_L03()
-    Local cNome := Space(50)
+    Local cNome := ""
     Local cMsg := ""
     Local nI := 0
 
